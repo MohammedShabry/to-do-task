@@ -33,7 +33,7 @@ Built with **MySQL**, **Node.js (Express)**, **React**, and **Docker**.
 ### 🧰 Prerequisites
 
 - Docker & Docker Compose
-- Git (optional, for cloning)
+- Git 
 
 ---
 
@@ -67,17 +67,6 @@ docker-compose up --build
 
 ---
 
-### 📝 Sample Request Body for POST /tasks
-
-```json
-{
-  "title": "Buy groceries",
-  "description": "Milk, Eggs, Bread"
-}
-```
-
----
-
 ## 🧪 Running Tests
 
 ### ✅ Backend Tests
@@ -98,39 +87,6 @@ npm test
 
 ---
 
-## 🗃️ Database Schema
-
-```sql
-CREATE TABLE task (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(255),
-  description TEXT,
-  completed BOOLEAN DEFAULT FALSE,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
----
-
-## 📁 Project Structure
-
-```
-todo-app/
-├── backend/
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── db.js
-│   ├── index.js
-│   └── tests/
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── tests/
-├── docker-compose.yml
-├── README.md
-```
-
 ---
 
 ## 🧹 Best Practices
@@ -142,15 +98,3 @@ todo-app/
 
 ---
 
-## 📝 Submission Notes
-
-- ✅ All core features completed
-- ✅ Docker Compose sets up entire stack
-- ✅ Tests included for both frontend and backend
-- ✅ Project follows clean structure and conventions
-
----
-
-## 📫 Contact
-
-For questions or feedback, please reach out to the developer or your project supervisor.
